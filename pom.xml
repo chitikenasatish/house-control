@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>house-control</name>
-	<description> House Control JQuery&Spring Boot</description>
+	<description> House Control JQuery Spring Boot</description>
 
 
 	<parent>
