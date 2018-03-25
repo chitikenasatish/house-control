@@ -29,16 +29,32 @@ Initial Rooms details populated from JSON file resources/home.json
     Request for temprature change.
     {"temperature" : 75}
 
+**Temp/Light Success Change Event Listener to know the change Status (subscribe) **
+
+       $(document).on("HouseLightAndCurtainEvent", function (evt) { });
+       $(document).on("TempChangeEvent", function (evt) { });
+
+       Listen to Custom Events triggered upon temp change and Light switch events.
+
+
+**Temp/Light send Trigger event to be consumed by suscribers (publish) **
+       $.event.trigger({
+                      type:    "TempChangeEvent",
+                      message: "Initialize TempColor",
+                      roomid:    obj.id,
+                      color : obj.temperature
+                    });
+
 ## To Build
         mvn clean install
 
 ## Code format:
 
 ## To DO :
-1.
-2. LOGGING
-2. Exception handling
-3. Validation
-5. Unit Test coverage
+1. Integrating with DB ,
+2. Caching Layer
+3. LOGGING
+4. Exception handling
+5. Unit testcases and Unit Test coverage
 6. CICD
 

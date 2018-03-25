@@ -24,20 +24,46 @@ public class HouseController {
     @Autowired
     RoomControl roomControl;
 
+    /**
+     *
+     * @return
+     * @throws APIException
+     */
     @RequestMapping(value = "/rooms" , method = RequestMethod.GET , produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<?> getRooms() throws APIException {
         return new ResponseEntity<Rooms>(roomControl.getAllRooms(), HttpStatus.OK);
     }
 
+
+    /**
+     *
+     * @param id
+     * @return
+     * @throws APIException
+     */
     @RequestMapping(value = "/rooms/{id}" , method = RequestMethod.GET , produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<?> getRoomById(@PathVariable String id) throws APIException {
         return new ResponseEntity<Room>(roomControl.getRoom(id), HttpStatus.OK);
     }
 
+    /**
+     *
+     * @param id
+     * @param roomRequest
+     * @return
+     * @throws APIException
+     */
     @RequestMapping(value = "/rooms/{id}" , method = RequestMethod.PUT , produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<?> updateRoom(@PathVariable String id,@RequestBody(required = false) RoomRequest roomRequest)throws APIException  {
          return new ResponseEntity<RoomResonse>(roomControl.updateRoom(id,roomRequest), HttpStatus.OK);
     }
+
+    /**
+     *
+     * @param id
+     * @return
+     * @throws APIException
+     */
     @RequestMapping(value = "/rooms/{id}" , method = RequestMethod.DELETE , produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<?> deleteByRoomId(@PathVariable String id) throws APIException {
         return new ResponseEntity<Boolean>(roomControl.deleteRoom(id), HttpStatus.OK);
