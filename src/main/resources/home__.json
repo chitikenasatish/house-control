@@ -1,0 +1,59 @@
+{
+  "Rooms": [
+    {
+      "name": "Sun Deck",
+      "id": "path2921",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    },
+    {
+      "name": "Main Bedroom",
+      "id": "rect2913",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    },
+    {
+      "name": "Second Bedroom",
+      "id": "path9173",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    },
+    {
+      "name": "Third Bedroom",
+      "id": "path12742",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    },
+    {
+      "name": "Living Room",
+      "id": "path10951",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    },
+    {
+      "name": "Entrance Hall",
+      "id": "rect2905",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    },
+    {
+      "name": "Kitchen",
+      "id": "path5621",
+      "light": false,
+      "temperature": 45,
+      "curtain": false
+    }
+  ],
+  "Address":{
+    "street" :"1616 Promotory Terrace",
+    "city" : "san ramon",
+    "State" : "CA",
+    "Country" : "USA"
+  }
+}

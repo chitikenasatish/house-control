@@ -1,0 +1,49 @@
+.footer {
+  bottom: 0;
+  height: 80px;
+  padding: 10px 0;
+  text-align: center;
+  background: #eee;
+  color: #444;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: #ff5252;
+}
+
+.control-panel {
+  margin: 20px auto;
+  display: block;
+}
+
+.col-md-8 object {
+  margin: 20px auto;
+  display: block;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.address_card {
+    background-color: #fff;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding: 20px 25px;
+
+     border-radius: 30px;
+        border: 2px solid #73AD21;
+
+        width: 200px;
+        height: 80px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
