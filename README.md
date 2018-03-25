@@ -2,10 +2,9 @@
 
 Room State not persisted in DB , But cached in Concurrent Map .
 How to run from command line
-  ```
+  
     java -jar target/house-control-0.0.1-SNAPSHOT.war
 
-    ```
 Default Port configured 8090 .
 
 ## House Control Board will be available at
