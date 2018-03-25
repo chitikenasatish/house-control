@@ -16,8 +16,10 @@ Default Port configured 8090 .
 2. JQuery to prepare the Control Board and make backend Rest calls to persist the room Change events like temprature , Light On/off and Curtain status.
 
 **To get (GET Mthod )the list of available Rooms with the status , or to know the status of single room with roomid**
+
     http://localhost:8090/v1/rooms
     http://localhost:8090/v1/rooms/{id}
+
 
 Initial Rooms details populated from JSON file resources/home.json
 
